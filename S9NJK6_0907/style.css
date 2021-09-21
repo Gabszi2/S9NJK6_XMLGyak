@@ -1,0 +1,42 @@
+body{
+	background-color: blue;
+	text-align:justify;
+	font-size:24px;
+		font-family: "Times New Roman", Times, serif;
+		color:white;
+		margin-left:30px;
+}
+.center
+{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 40%;
+
+}
+.menu
+{
+	text-align:center;
+	font-size: 34px;
+text-decoration: underline;
+	padding:15px;
+	width:100%;
+
+
+}
+a
+{
+	color:white;
+}
+ul
+{
+	margin-left:60px;
+}
+.image
+{
+	height:400px;
+	width:600px;
+	float:right;
+	padding:60px
+}
