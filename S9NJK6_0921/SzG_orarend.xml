@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orarend>
+	<ora id="GEIAL333-B" tipus="Gyakorlat">
+		<targy>Web-es alkalmazások</targy>
+		<idopont nap="Hétfő" tol="10:00" ig="12:00"/>
+		<helyszin>Inf.101.</helyszin>
+		<oktato>Krizsán Zoltán</oktato>
+		<szak>Informatika</szak>
+	</ora>
+	<ora id="GEIAL331-B" tipus="Elmélet">
+		<targy>Web technológiák 1</targy>
+		<idopont nap="Hétfő" tol="12:00" ig="14:00"/>
+		<helyszin>A1 305</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Informatika</szak>
+	</ora>
+	<ora id="GEIAK130-B" tipus="ELmélet">
+		<targy>Mesterséges inteligencia alapok</targy>
+		<idopont nap="Hétfő" tol="14:00" ig="17:00"/>
+		<helyszin>XXII. előadó</helyszin>
+		<oktato>Dudás László</oktato>
+		<szak>Informatika</szak>
+	</ora>
+	<ora id="GEIAL331-B" tipus="Gyakorlat">
+		<targy>Web technológiák 1</targy>
+		<idopont nap="Hétfő" tol="17:00" ig="19:00"/>
+		<helyszin>A1 305</helyszin>
+		<oktato>Kunné  Tamás Judit</oktato>
+		<szak>Informatika</szak>
+	</ora>
+	<ora id="GEIAL333-B" tipus="Gyakorlat">
+		<targy>Web-es alkalmazások</targy>
+		<idopont nap="Kedd" tol="10:00" ig="12:00"/>
+		<helyszin>Inf.101.</helyszin>
+		<oktato>Krizsán Zoltán</oktato>
+		<szak>Informatika</szak>
+	</ora>
+	<ora id="GEIAL332-B" tipus="Elmélet">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont nap="Kedd" tol="12:00" ig="14:00"/>
+		<helyszin>I.előadó</helyszin>
+		<oktato>Benradik László</oktato>
+		<szak>Informatika</szak>
+	</ora>
+		<ora id="GEIAL332-B" tipus="Gyakorlat">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont nap="Kedd" tol="14:00" ig="16:00"/>
+		<helyszin>Inf. 103.</helyszin>
+		<oktato>Benradik László</oktato>
+		<szak>Informatika</szak>
+	</ora>
+		<ora id="GEIAL130-B" tipus="Gyakorlat">
+		<targy>Mesterséges inteligencia alapok</targy>
+		<idopont nap="Kedd" tol="18:00" ig="19:00"/>
+		<helyszin>Inf. 15.</helyszin>
+		<oktato>Dudás László</oktato>
+		<szak>Informatika</szak>
+	</ora>
+</orarend>

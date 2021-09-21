@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia>
+	<cím> Mesterséges inteligencia a mindennapokban</cím>
+	<halgatók>
+		<halgató nev="Kerekes Virág" lakcím="Miskolc"/>
+	</halgatók>
+	<helyszin>Budakeszi</helyszin>
+	<eloado nev="Eszterházi Béla" adoszam="52497254" lakcim="Balatonlelle"/>
+	<datum>2025.06.06</datum>
+	
+</konferencia>
