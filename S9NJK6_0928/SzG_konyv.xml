@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE konyvek SYSTEM "SzG_konyv.dtd">
+<konyvek>
+    <konyv kkod="IT9786155186820">
+        <cim>Excel 2019</cim>
+        <kiadasev>2021</kiadasev>
+        <kiado>TARAMIX Kiadó Kft.</kiado>
+        <szerzo>Szabó Ildikó</szerzo>
+        <absztrakt>Exel alapok</absztrakt>
+    </konyv>
+
+    <konyv kkod="IT9789634931393">
+        <cim>Szövegbányászat és mesterséges intelligencia R-ben</cim>
+        <kiadasev>2021</kiadasev>
+        <kiado>Typotex Elektronikus Kiadó Kft.</kiado>
+        <szerzo>Máté Ákos</szerzo>
+        <szerzo> Ring Orsolya</szerzo>
+        <szerzo>Sebők Miklós</szerzo>
+        <absztrakt></absztrakt>
+    </konyv>
+    <konyv kkod="IT9786155477829IT">
+        <cim>Android zsebkönyv</cim>
+        <kiadasev>2019</kiadasev>
+        <kiado>BBS-INFO KÖNYVK. ÉS INFORM. KFT.</kiado>
+        <szerzo>Bártfai Barnabás</szerzo>
+        <absztrakt></absztrakt>
+    </konyv>
+</konyvek>
