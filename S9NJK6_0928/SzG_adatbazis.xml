@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE adatbazis [
+        <!ELEMENT adatbazis (dolgozok)>
+        <!ELEMENT dolgozok (dolgozo+)>
+        <!ELEMENT dolgozo (nev, fizetes)>
+        <!ATTLIST dolgozo kod ID #REQUIRED>
+        <!ELEMENT nev (#PCDATA)>
+        <!ELEMENT fizetes (#PCDATA)>
+        ]>
+
+<adatbazis>
+    <dolgozok>
+        <dolgozo kod="ME060514">
+            <nev>Arany József</nev>
+            <fizetes>200000</fizetes>
+        </dolgozo>
+        <dolgozo kod="ME550424">
+            <nev>Och Inchi</nev>
+            <fizetes>500000</fizetes>
+        </dolgozo>
+        <dolgozo kod="ME035830">
+            <nev>Cserepes Krizantén</nev>
+            <fizetes>250000</fizetes>
+        </dolgozo>
+    </dolgozok>
+</adatbazis>
