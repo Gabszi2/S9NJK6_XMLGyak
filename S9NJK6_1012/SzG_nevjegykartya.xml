@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SzG_nevjegykartya.xsd">
+    <nevjegykartya>
+        <nev>Szilágyi Gábor</nev>
+        <ceg>
+            <nev>Sajt</nev>
+            <cim>
+                <iranyitoszam>5685</iranyitoszam>
+                <varos>Kifli</varos>
+                <utca>József Atilla</utca>
+                <hazszam>65</hazszam>
+            </cim>
+            <telefonszam>+36202563458</telefonszam>
+            <weblap>www.sajtoskifli.com</weblap>
+        </ceg>
+        <beosztas>Web dizájner</beosztas>
+        <telefonszam>+36303586421</telefonszam>
+        <email>email@email.hu</email>
+    </nevjegykartya>
+
+    <nevjegykartya>
+        <nev>Kitalált Erik</nev>
+        <ceg>
+            <nev>Kifli</nev>
+            <cim>
+                <iranyitoszam>5865</iranyitoszam>
+                <varos>Sajtos</varos>
+                <utca>Petőfi Sándor</utca>
+                <hazszam>56</hazszam>
+            </cim>
+            <telefonszam>+36302642598</telefonszam>
+            <weblap>www.kiflissajt.com</weblap>
+        </ceg>
+        <beosztas>Osztályvezető</beosztas>
+        <telefonszam>+36205489874</telefonszam>
+        <email>email123@email.com</email>
+    </nevjegykartya>
+</nevjegykartyak>
