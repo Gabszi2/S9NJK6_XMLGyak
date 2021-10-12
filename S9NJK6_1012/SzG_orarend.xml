@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SzG_orarend.xsd">
+<orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="orarend2.xsd">
 
 	<ora id="GEIAL333-B" tipus="Gyakorlat">
 		<targy>Web-es alkalmazások</targy>
@@ -102,7 +102,7 @@
 		<targy>Szoftvertesztelés</targy>
 		<idopont>
 		<nap>Szerda</nap>
-		<tol>8:00</tol>
+		<tol>08:00</tol>
 		<ig>10:00</ig>
 	</idopont>
 		<helyszin>Inf. 103.</helyszin>
