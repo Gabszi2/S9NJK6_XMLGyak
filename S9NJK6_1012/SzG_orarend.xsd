@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
-    <xs:complexType name="idoponType">
+    <xs:simpleType name="napType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Hétfő"/>
+            <xs:enumeration value="Kedd"/>
+            <xs:enumeration value="Szerda"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Elmélet"/>
+            <xs:enumeration value="Gyakorlat"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="idopontType">
         <xs:sequence>
-            <xs:element name="nap" type="xs:string"/>
+            <xs:element name="nap" type="napType"/>
             <xs:element name="tol" type="xs:string"/>
             <xs:element name="ig" type="xs:string"/>
         </xs:sequence>
@@ -15,13 +28,13 @@
             <xs:complexType>
                 <xs:sequence>
                     <xs:element name="targy" type="xs:string"/>
-                    <xs:element name="idopont" type="idoponType"/>
+                    <xs:element name="idopont" type="idopontType"/>
                     <xs:element name="helyszin" type="xs:string"/>
                     <xs:element name="oktato" type="xs:string"/>
                     <xs:element name="szak" type="xs:string"/>
                 </xs:sequence>
                 <xs:attribute name="id" type="xs:string" use="required"/>
-                <xs:attribute name="tipus" type="xs:string" use="required"/>
+                <xs:attribute name="tipus" type="tipusType" use="required"/>
             </xs:complexType>
         </xs:element>
     </xs:sequence>
