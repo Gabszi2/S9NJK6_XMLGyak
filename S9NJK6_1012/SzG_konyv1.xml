@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konyvek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SzG_konyv1.xsd">
+    <isbm>1868574522</isbm>
+    <konyv>
+        <cim>Barangolás egy új világban.</cim>
+        <szerzo>Isekai Truck</szerzo>
+        <szereplo>
+            <nev>Makoto Newhouse</nev>
+            <baratja>Erika</baratja>
+            <szuletett>2222-02-02</szuletett>
+            <jellemzes>Egy átlagos fiú akit sok minden érdekel és kettesben a barátjával fedezik fel az új világot ahol találták magukat</jellemzes>
+        </szereplo>
+        <szereplo>
+            <nev>Erika</nev>
+            <szuletett>2220-11-22</szuletett>
+            <jellemzes>Egy erős akaratú lány aki nem emlékszik semmi másra csak a nevére ebben az új és ismeretlen világban</jellemzes>
+        </szereplo>
+    </konyv>
+</konyvek>
