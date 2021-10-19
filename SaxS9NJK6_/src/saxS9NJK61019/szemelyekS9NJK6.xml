@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE szemelyek SYSTEM "szemelyekS9NJK6.dtd">
+<szemelyek> <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="szemelyekS9NJK6.xsd"-->
+    <szemely>
+        <id>
+            <nev>Szilágyi Gábor</nev>
+            <kor>21</kor>
+            <varos>Tiszaújváros</varos>
+        </id>
+    </szemely>
+    <szemely>
+        <id>
+            <nev>Kis József</nev>
+            <kor>22</kor>
+            <varos>Miskolc</varos>
+        </id>
+    </szemely>
+    <szemely>
+        <id>
+            <nev>Tataros Vince</nev>
+            <kor>25</kor>
+            <varos>Dunakeszi</varos>
+        </id>
+    </szemely>
+</szemelyek>
