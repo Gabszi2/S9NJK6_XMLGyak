@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="usersS9NJK6.xsd">
+    <user>
+        <id id="1">
+            <firstname>Gábor</firstname>
+            <lastname>Szilágyi</lastname>
+            <profession>Softwer engineer</profession>
+        </id>
+    </user>
+    <user>
+        <id id="2">
+            <firstname>Jhon</firstname>
+            <lastname>Smith</lastname>
+            <profession>Accountant</profession>
+        </id>
+    </user>
+    <user>
+        <id id="3">
+            <firstname>Lorelei</firstname>
+            <lastname>Ivanovits</lastname>
+            <profession>Web designer</profession>
+        </id>
+    </user>
+</users>

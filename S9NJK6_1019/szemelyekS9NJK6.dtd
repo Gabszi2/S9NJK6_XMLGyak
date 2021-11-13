@@ -1,0 +1,6 @@
+<!ELEMENT szemelyek (szemely*)>
+    <!ELEMENT szemely (id)>
+        <!ELEMENT id (nev,kor,varos)>
+            <!ELEMENT nev (#PCDATA)>
+            <!ELEMENT kor (#PCDATA)>
+            <!ELEMENT varos (#PCDATA)>
