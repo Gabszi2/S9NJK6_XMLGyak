@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+<xs:element name="users">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="user" type="userType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!--Keys-->
+    <xs:key name="accountEmail">
+        <xs:selector xpath="./user/account"/>
+        <xs:field xpath="@email"/>
+    </xs:key>
+    
+    <xs:key name="myCharacterName">
+        <xs:selector xpath="./user/account/characters/character"/>
+        <xs:field xpath="@character_name"/>
+    </xs:key>
+    
+    <xs:key name="friendsCharacterName">
+        <xs:selector xpath="./user/friends/friend"/>
+        <xs:field xpath="@character_name"/>
+    </xs:key>
+    
+    <xs:keyref name="statisticsRef" refer="myCharacterName">
+        <xs:selector xpath="./user/statistics/statistic"/>
+        <xs:field xpath="@character_name"/>
+    </xs:keyref>
+    
+    <xs:keyref name="requestMyCharacterName" refer="myCharacterName">
+        <xs:selector xpath="./user/requests/request"/>
+        <xs:field xpath="@myCharacterName"/>
+    </xs:keyref>
+    
+    <xs:keyref name="requestFriendCharacterName" refer="friendsCharacterName">
+        <xs:selector xpath="./user/requests/request"/>
+        <xs:field xpath="@friendsCharacterName"/>
+    </xs:keyref>
+    
+    <xs:keyref name="leaderBoardEmail" refer="accountEmail">
+        <xs:selector xpath="./user/leader_board"/>
+        <xs:field xpath="@email"/>
+    </xs:keyref>
+    
+</xs:element>
+    
+    <xs:complexType name="userType">
+        <xs:sequence>
+            <xs:element name="account" type="accountType"/>
+            <xs:element name="statistics" type="statisticsType" maxOccurs="unbounded"/>
+            <xs:element name="leader_board" type="leader_boardType"/>
+            <xs:element name="requests" type="requestsType"/>
+            <xs:element name="friends" type="friendsType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!--Universal myTypes-->
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^.]+..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="classesType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Warrior"/>
+            <xs:enumeration value="Archer"/>
+            <xs:enumeration value="Mage"/>
+            <xs:enumeration value="Tank"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="racesType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Human"/>
+            <xs:enumeration value="Elf"/>
+            <xs:enumeration value="Dwarf"/>
+            <xs:enumeration value="Demon"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--Account elements-->
+    <xs:complexType name="accountType">
+        <xs:sequence>
+            <xs:element name="user_name" type="xs:string"/>
+            <xs:element name="password" type="xs:string"/>
+            <xs:element name="characters" type="charactersType"/>
+        </xs:sequence>
+        <xs:attribute name="email" type="emailType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="charactersType">
+        <xs:sequence>
+            <xs:element name="character" type="characterType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="characterType">
+        <xs:sequence>
+            <xs:element name="class" type="classesType"/>
+            <xs:element name="race" type="racesType"/>
+        </xs:sequence>
+        <xs:attribute name="character_name" type="xs:string" use="required"/>
+    </xs:complexType>
+
+
+    <!--Statistics elements-->
+    <xs:complexType name="statisticsType">
+        <xs:sequence>
+            <xs:element name="statistic" type="statisticType" maxOccurs="unbounded"/>
+        </xs:sequence>
+
+    </xs:complexType>
+    <xs:complexType name="statisticType">
+        <xs:sequence>
+            <xs:element name="class" type="classesType"/>
+            <xs:element name="race" type="racesType"/>
+            <xs:element name="dammage_done" type="xs:int"/>
+            <xs:element name="healing_done" type="xs:int"/>
+            <xs:element name="deaths" type="xs:int"/>
+            <xs:element name="completed_runs" type="xs:int"/>
+            <xs:element name="date" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute name="character_name" type="xs:string" use="required"/>
+    </xs:complexType>
+    <!-- Leader board elements-->
+    <xs:complexType name="leader_boardType">
+        <xs:sequence>
+            <xs:element name="user_name" type="xs:string" />
+            <xs:element name="dammage_done" type="xs:int"/>
+            <xs:element name="healing_done" type="xs:int"/>
+            <xs:element name="deaths" type="xs:int"/>
+            <xs:element name="place" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="email" type="emailType" use="required"/>
+    </xs:complexType>
+
+    <!--Request elements, connects Account with Friends-->
+    <xs:complexType name="requestsType">
+        <xs:sequence>
+            <xs:element name="request" type="requestType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="requestType">
+        <xs:sequence>
+            <xs:element name="accepted" type="xs:boolean"/>
+        </xs:sequence>
+        <xs:attribute name="myCharacter_name" type="xs:string" use="required"/>
+        <xs:attribute name="friendCharacter_name" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <!--Friends elements (character_name=friend's character_name)-->
+    <xs:complexType name="friendsType">
+        <xs:sequence>
+        <xs:element name="friend" type="friendType" maxOccurs="unbounded"/>
+        </xs:sequence>
+
+    </xs:complexType>
+    <xs:complexType name="friendType">
+        <xs:sequence>
+            <xs:element name="online" type="xs:boolean"/>
+            <xs:element name="last_online" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute name="character_name" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+</xs:schema>
