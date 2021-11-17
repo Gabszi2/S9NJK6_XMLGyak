@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaS9NJK6.xsd">
+    <user>
+        <account email="sajt2@sajt.sa">
+            <user_name>Sajtoska2</user_name>
+            <password>sasajt</password>
+            <characters>
+                <character character_name="Gátierő">
+                    <class>Warrior</class>
+                    <race>Human</race>
+                </character>
+                <character character_name="Legoolass">
+                    <class>Archer</class>
+                    <race>Elf</race>
+                </character>
+            </characters>
+        </account>
+        <statistics>
+            <statistic character_name="Gátierő">
+                <class>Warrior</class>
+                <race>Human</race>
+                <dammage_done>10000</dammage_done>
+                <healing_done>100</healing_done>
+                <deaths>5</deaths>
+                <completed_runs>10</completed_runs>
+                <date>2021-11-02</date>
+            </statistic>
+
+        </statistics>
+        <leader_board email="sajt2@sajt.sa">
+            <user_name>Sajtoska2</user_name>
+            <dammage_done>25000</dammage_done>
+            <healing_done>500</healing_done>
+            <deaths>8</deaths>
+            <place>1</place>
+        </leader_board>
+        <requests>
+            <request myCharacter_name="Legoolass" friendCharacter_name="Maho">
+                <accepted>true</accepted>
+            </request>
+            <request myCharacter_name="Legoolass" friendCharacter_name="Wall">
+                <accepted>false</accepted>
+            </request>
+        </requests>
+        <friends>
+            <friend character_name="Maho">
+                <online>false</online>
+                <last_online>2021-11-12</last_online>
+            </friend>
+        </friends>
+    </user>
+
+</users>
