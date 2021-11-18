@@ -19,16 +19,35 @@
             <statistic character_name="Gátierő">
                 <class>Warrior</class>
                 <race>Human</race>
-                <dammage_done>10000</dammage_done>
+                <damage_done>10000</damage_done>
                 <healing_done>100</healing_done>
                 <deaths>5</deaths>
                 <completed_runs>10</completed_runs>
                 <date>2021-11-02</date>
             </statistic>
+            <statistic character_name="Legoolass">
+                <class>Archer</class>
+                <race>Elf</race>
+                <damage_done>15000</damage_done>
+                <healing_done>400</healing_done>
+                <deaths>3</deaths>
+                <completed_runs>5</completed_runs>
+                <date>2021-11-10</date>
+            </statistic>
+            <statistic character_name="Legoolass">
+                <class>Archer</class>
+                <race>Elf</race>
+                <damage_done>15000</damage_done>
+                <healing_done>400</healing_done>
+                <deaths>3</deaths>
+                <completed_runs>5</completed_runs>
+                <date>2021-11-09</date>
+            </statistic>
+
         </statistics>
         <leader_board email="sajt2@sajt.sa">
             <user_name>Sajtoska2</user_name>
-            <dammage_done>25000</dammage_done>
+            <damage_done>25000</damage_done>
             <healing_done>500</healing_done>
             <deaths>8</deaths>
             <place>1</place>
@@ -48,4 +67,41 @@
             </friend>
         </friends>
     </user>
+    <user>
+        <account email="asd@asd.as">
+            <user_name>AsdDsa</user_name>
+            <password>pontosanaz</password>
+            <characters>
+                <character character_name="Wall">
+                    <class>Tank</class>
+                    <race>Dwarf</race>
+                </character>
+            </characters>
+        </account>
+        <statistics>
+            <statistic character_name="Wall">
+                <class>Tank</class>
+                <race>Dwarf</race>
+                <damage_done>5000</damage_done>
+                <healing_done>5000</healing_done>
+                <deaths>2</deaths>
+                <completed_runs>5</completed_runs>
+                <date>2021-11-11</date>
+            </statistic>
+        </statistics>
+        <leader_board email="asd@asd.as">
+            <user_name>AsdDsa</user_name>
+            <damage_done>5000</damage_done>
+            <healing_done>5000</healing_done>
+            <deaths>2</deaths>
+            <place>2</place>
+        </leader_board>
+        <requests>
+
+        </requests>
+        <friends>
+
+        </friends>
+    </user>
+
 </users>

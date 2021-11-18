@@ -83,7 +83,7 @@ public class DomReadS9NJK6 {
                         String characterName=statisticElement.getAttribute("character_name");
                         String characterClass=statisticElement.getElementsByTagName("class").item(0).getTextContent();
                         String race=statisticElement.getElementsByTagName("race").item(0).getTextContent();
-                        String damage=statisticElement.getElementsByTagName("dammage_done").item(0).getTextContent();
+                        String damage=statisticElement.getElementsByTagName("damage_done").item(0).getTextContent();
                         String healing=statisticElement.getElementsByTagName("healing_done").item(0).getTextContent();
                         String deaths=statisticElement.getElementsByTagName("deaths").item(0).getTextContent();
                         String runs=statisticElement.getElementsByTagName("completed_runs").item(0).getTextContent();
@@ -107,7 +107,7 @@ public class DomReadS9NJK6 {
 
                     String leaderEmail=leaderBoardElement.getAttribute("email");
                     String leaderUserName=leaderBoardElement.getElementsByTagName("user_name").item(0).getTextContent();
-                    String leaderDamage=leaderBoardElement.getElementsByTagName("dammage_done").item(0).getTextContent();
+                    String leaderDamage=leaderBoardElement.getElementsByTagName("damage_done").item(0).getTextContent();
                     String leaderHealing=leaderBoardElement.getElementsByTagName("healing_done").item(0).getTextContent();
                     String leaderDeaths=leaderBoardElement.getElementsByTagName("deaths").item(0).getTextContent();
                     String place=leaderBoardElement.getElementsByTagName("place").item(0).getTextContent();
@@ -152,7 +152,6 @@ public class DomReadS9NJK6 {
                         System.out.println("Last online: "+lastOnline+"\n");
                     }
 
-                    System.out.println(accountElement.getTextContent().toString());
                 }
 
 
