@@ -15,7 +15,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 
-public class DomWriteKPRLNB {
+public class DomWriteS9NJK6 {
     public static void main(String[] args) throws ParserConfigurationException, TransformerConfigurationException {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
