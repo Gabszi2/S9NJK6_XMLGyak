@@ -53,7 +53,8 @@
             <xs:element name="friends" type="friendsType" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    <!--Universal myTypes-->
+
+    <!--Simple myTypes-->
     <xs:simpleType name="emailType">
         <xs:restriction base="xs:string">
             <xs:pattern value="[^@]+@[^.]+..+"/>
@@ -114,7 +115,7 @@
         <xs:sequence>
             <xs:element name="class" type="classesType"/>
             <xs:element name="race" type="racesType"/>
-            <xs:element name="dammage_done" type="xs:int"/>
+            <xs:element name="damage_done" type="xs:int"/>
             <xs:element name="healing_done" type="xs:int"/>
             <xs:element name="deaths" type="xs:int"/>
             <xs:element name="completed_runs" type="xs:int"/>
@@ -126,7 +127,7 @@
     <xs:complexType name="leader_boardType">
         <xs:sequence>
             <xs:element name="user_name" type="xs:string" />
-            <xs:element name="dammage_done" type="xs:int"/>
+            <xs:element name="damage_done" type="xs:int"/>
             <xs:element name="healing_done" type="xs:int"/>
             <xs:element name="deaths" type="xs:int"/>
             <xs:element name="place" type="xs:int"/>
@@ -137,7 +138,7 @@
     <!--Request elements, connects Account with Friends-->
     <xs:complexType name="requestsType">
         <xs:sequence>
-            <xs:element name="request" type="requestType" maxOccurs="unbounded"/>
+            <xs:element name="request" type="requestType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="requestType">
@@ -151,7 +152,7 @@
     <!--Friends elements (character_name=friend's character_name)-->
     <xs:complexType name="friendsType">
         <xs:sequence>
-        <xs:element name="friend" type="friendType" maxOccurs="unbounded"/>
+        <xs:element name="friend" type="friendType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
 
     </xs:complexType>

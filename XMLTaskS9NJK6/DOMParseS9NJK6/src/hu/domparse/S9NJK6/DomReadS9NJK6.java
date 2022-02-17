@@ -9,7 +9,6 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.File;
 import java.io.IOException;
 
 public class DomReadS9NJK6 {
@@ -158,12 +157,8 @@ public class DomReadS9NJK6 {
             }
 
 
-        }catch(SAXException | IOException | ParserConfigurationException e) {
+        }catch(SAXException | IOException | ParserConfigurationException | NumberFormatException e) {
             System.err.println(e.getMessage());
-
-        } catch(NumberFormatException nfe) {
-            System.err.println(nfe.getMessage());
-
 
         }
     }
